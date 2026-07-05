@@ -42,6 +42,8 @@ class Particle
         
         double getMomentum() const;
 
+        double getPt() const;
+
     private:
 
         std::string name;

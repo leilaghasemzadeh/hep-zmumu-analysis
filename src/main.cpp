@@ -52,6 +52,10 @@ int main(){
     << muon.getMomentum()
     << std::endl;
 
+    std::cout << "Muon Pt = "
+    << muon.getPt()
+    << std::endl;
+
 
     return 0;
 }

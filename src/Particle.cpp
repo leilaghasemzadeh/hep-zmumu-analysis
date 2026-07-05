@@ -114,3 +114,11 @@ double Particle::getMomentum() const
         pz * pz
     );
 }
+
+double Particle::getPt() const
+{
+    return std::sqrt(
+        px * px +
+        py * py
+    );
+}
