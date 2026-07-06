@@ -60,6 +60,10 @@ int main(){
     << muon.getPhi()
     << std::endl; 
 
+    std::cout << "Muon Eta = "
+    << muon.getEta()
+    << std::endl;
+
 
     return 0;
 }

@@ -127,3 +127,8 @@ double Particle::getPhi() const
 {
     return std::atan2(py , px);
 }
+
+double Particle::getEta() const
+{
+    return 0.5 * std::log((getMomentum() + getPz()) / (getMomentum() - getPz()));
+}

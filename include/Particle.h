@@ -46,6 +46,8 @@ class Particle
 
         double getPhi() const;
 
+        double getEta() const;
+
     private:
 
         std::string name;
