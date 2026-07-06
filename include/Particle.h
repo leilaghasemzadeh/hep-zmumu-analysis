@@ -44,6 +44,8 @@ class Particle
 
         double getPt() const;
 
+        double getPhi() const;
+
     private:
 
         std::string name;

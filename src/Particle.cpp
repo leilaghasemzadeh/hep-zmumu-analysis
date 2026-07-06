@@ -121,4 +121,9 @@ double Particle::getPt() const
         px * px +
         py * py
     );
+} 
+
+double Particle::getPhi() const
+{
+    return std::atan2(py , px);
 }

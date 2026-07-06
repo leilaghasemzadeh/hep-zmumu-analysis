@@ -56,6 +56,10 @@ int main(){
     << muon.getPt()
     << std::endl;
 
+    std::cout << "Muon Phi = "
+    << muon.getPhi()
+    << std::endl; 
+
 
     return 0;
 }
