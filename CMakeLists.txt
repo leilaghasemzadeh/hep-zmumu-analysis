@@ -10,6 +10,7 @@ add_executable(zmumu-analysis
     src/main.cpp
     src/Particle.cpp
     src/Physics.cpp
+    src/Event.cpp
     )
 target_include_directories(
         zmumu-analysis

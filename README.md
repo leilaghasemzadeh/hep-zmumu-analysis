@@ -28,11 +28,39 @@ This project follows the complete workflow of a particle physics analysis:
 
 ## Roadmap
 
-- [x] Project initialization
-- [ ] Build system with CMaker
-- [ ] Particle class
-- [ ] Root file reader
-- [ ] Muon selection
-- [ ] Invariant mass calculation
-- [ ] Histogram production
-- [ ] Z bozon reconstruction 
+## Roadmap
+
+- [x] Set up CMake project
+- [x] Initialize Git repository
+- [x] Create GitHub repository
+- [x] Implement Particle class
+- [x] Add constructors
+- [x] Add getters and setters
+- [x] Store momentum components (px, py, pz)
+- [x] Calculate total momentum
+- [x] Calculate transverse momentum (Pt)
+- [x] Calculate azimuthal angle (Phi)
+- [x] Create Physics module
+- [x] Implement invariant mass calculation
+- [ ] Create Event class
+- [ ] Represent a Z→μμ candidate
+- [ ] Refactor using LorentzVector
+- [ ] Read ROOT files
+- [ ] Loop over events
+- [ ] Fill invariant mass histogram
+- [ ] Fit the Z peak
+
+## Current Status
+
+**Current milestone:** Physics Module ✅
+
+Implemented features:
+
+- Particle class
+- Kinematic quantities (P, Pt, Phi)
+- Invariant mass calculation
+- Git + GitHub integration
+
+Next objective:
+
+➡️ Design the Event class

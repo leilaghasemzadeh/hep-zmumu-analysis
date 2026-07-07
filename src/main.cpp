@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Particle.h"
 #include "Physics.h"
+#include "Event.h"
 
 
 int main(){
@@ -90,6 +91,16 @@ calculateInvariantMass(
 
 std::cout << "Invariant Mass = "
           << invariantMass
+          << std::endl;
+
+
+Event event;
+
+event.addParticle(muon1);
+event.addParticle(muon2);
+
+std::cout << "Number of particles in event = "
+          << event.getNumberofParticles()
           << std::endl;
 
 
