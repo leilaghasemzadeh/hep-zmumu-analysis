@@ -7,12 +7,16 @@
 class Event
 {
     public:
-        Event();
+        Event(int include);
+        
         void addParticle(const Particle& particle);
         const std::vector<Particle>& getParticles() const;
         size_t getNumberofParticles() const;
+        int getEventID() const;
 
     private:
+
+        int eventID;
 
         std::vector<Particle> particles;
 };

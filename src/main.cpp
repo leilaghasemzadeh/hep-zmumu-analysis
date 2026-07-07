@@ -87,20 +87,28 @@ calculateInvariantMass(
     totalPx,
     totalPy,
     totalPz
-);
+    );
 
 std::cout << "Invariant Mass = "
           << invariantMass
           << std::endl;
 
 
-Event event;
+Event Event(1001);
 
-event.addParticle(muon1);
-event.addParticle(muon2);
+Event.addParticle(muon1);
+Event.addParticle(muon2);
 
 std::cout << "Number of particles in event = "
-          << event.getNumberofParticles()
+          << Event.getNumberofParticles()
+          << std::endl;
+
+std::cout << "Event ID = "
+          << Event.getEventID()
+          << std::endl;
+          
+std::cout << "Number of particles = "
+          << Event.getNumberofParticles()
           << std::endl;
 
 

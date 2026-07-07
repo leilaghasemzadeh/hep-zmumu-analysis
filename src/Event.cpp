@@ -1,7 +1,8 @@
 #include "Event.h"
 
 
-Event::Event()
+Event::Event(int id)
+            : eventID(id)
 {
 
 }
@@ -17,7 +18,11 @@ const std::vector<Particle>& Event::getParticles() const
     return particles;
 }
 
-size_t Event::getNumberofParticles() const
+size_t Event::getNumberofParticles() const 
 {
     return particles.size();
+}
+int Event::getEventID() const 
+{
+    return eventID;
 }
