@@ -1,6 +1,6 @@
 #ifndef PHYSICS_H
 #define PHYSICS_H
-
+#include "Particle.h"
 
 
 double calculateInvariantMass(
@@ -10,5 +10,8 @@ double calculateInvariantMass(
     double pz
 );
 
-
+double calculateInvariantMass(
+    const Particle& p1,
+    const Particle& p2
+);
 #endif

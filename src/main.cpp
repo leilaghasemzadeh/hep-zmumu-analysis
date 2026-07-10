@@ -76,39 +76,32 @@ int main(){
     -120.0
 );
 
-double totalEnergy = muon1.getEnergy() + muon2.getEnergy();
-double totalPx = muon1.getPx() + muon2.getPx();
-double totalPy = muon1.getPy() + muon2.getPy();
-double totalPz = muon1.getPz() + muon2.getPz();
 
-double invariantMass = 
-calculateInvariantMass(
-    totalEnergy , 
-    totalPx,
-    totalPy,
-    totalPz
-    );
+Event event(1001);
 
-std::cout << "Invariant Mass = "
+event.addParticle(muon1);
+event.addParticle(muon2);
+
+const std::vector<Particle>& particles = event.getParticles();
+const Particle& mu1 = particles[0];
+const Particle& mu2 =particles[1];
+
+double invariantMass = calculateInvariantMass(mu1, mu2);
+
+std::cout <<"Invariant Mass = "
           << invariantMass
           << std::endl;
 
-
-Event Event(1001);
-
-Event.addParticle(muon1);
-Event.addParticle(muon2);
-
 std::cout << "Number of particles in event = "
-          << Event.getNumberofParticles()
+          << event.getNumberofParticles()
           << std::endl;
 
 std::cout << "Event ID = "
-          << Event.getEventID()
+          << event.getEventID()
           << std::endl;
           
 std::cout << "Number of particles = "
-          << Event.getNumberofParticles()
+          << event.getNumberofParticles()
           << std::endl;
 
 
